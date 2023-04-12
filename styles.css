@@ -1,0 +1,244 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    /* background-color: darkslategray; */
+    background-color: #bdd0cd;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.add-newnote-btn {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 0px;
+    
+}
+
+.add-newnote-btn button {
+    width: 150px;
+    height: 100%;
+    background-color: rgb(33, 51, 45);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    padding: 0px 5px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.writing-area {
+    
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(33, 51, 45,0.40);
+    padding: 20px;
+    border-radius: 4px;
+    animation: fade-in 0.5s ease;
+}
+.display .writing-area {
+    display: flex;
+}
+.writing-area input {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    letter-spacing: 2px;
+    
+    
+}
+
+hr {
+    border: 1px solid rgba(113, 108, 108, 0.363);
+}
+
+.writing-area textarea {    
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    resize: vertical;
+
+}
+
+.writing-area button {
+    width: 100px;
+    height: 100%;
+    background-color: rgb(33, 51, 45);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    
+}
+
+.btn-cls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.alertBox {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.alertMsg-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.displayAlert .alertBox {
+    display: flex;
+}
+
+.alertBox p {
+    color: #e70000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+.previous-notes{
+    width: 100%;
+    height: auto;
+    background-color: rgba(33, 51, 45,0.40);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+ 
+    100% {
+        opacity: 1;
+    }
+}
+
+.note {
+    width: 100%;
+    height: auto;
+    background-color: rgba(33, 51, 45,0.40);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.TitlePDelete {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TitlePDelete p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.TitlePDelete .del {
+    width: 60px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: 1px solid  rgb(33, 51, 45);
+    border-radius: 4px;
+
+}
+
+.AddedNote p {
+    width: 100%;
+   color: white;
+    font-size: 15px;
+    word-wrap: break-word;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.c-and-t {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: burlywood;
+} 
+
+.c-and-t span {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-newnote-btn span {
+    color: rgb(33, 51, 45);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.t-d {
+    display: flex;
+    gap: 20px;
+}
